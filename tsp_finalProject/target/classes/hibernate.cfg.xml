@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="">
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/finalproject</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password"></property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.show_sql">true</property>
+		<mapping class="com.project.pojo.User" />
+		<mapping class="com.project.pojo.Supplier" />
+		<mapping class="com.project.pojo.Buyer" />
+		<mapping class="com.project.pojo.Product" />
+		<mapping class="com.project.pojo.Cart" />
+		<mapping class="com.project.pojo.Order" />
+		<mapping class="com.project.pojo.ProductCart" />
+	</session-factory>
+</hibernate-configuration>
